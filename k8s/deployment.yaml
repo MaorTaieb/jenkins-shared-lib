@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: maortaieb/myapp:latest
+        image: maortaieb/k8s-web-hello:latest
         command: ["node", "index.mjs"]
         ports:
         - containerPort: 3000
