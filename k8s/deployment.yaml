@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mjs-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mjs-app
+  template:
+    metadata:
+      labels:
+        app: mjs-app
+    spec:
+      containers:
+      - name: app
+        image: maortaieb/myapp:latest
+        command: ["node", "index.mjs"]
+        ports:
+        - containerPort: 3000
+
