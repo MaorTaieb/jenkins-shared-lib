@@ -4,7 +4,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME   = "1234567890.dkr.ecr.us-east-1.amazonaws.com/myapp"
+        IMAGE_NAME   = "maortaieb/k8s-web-hello"
         IMAGE_TAG    = "latest"
         CLUSTER_NAME = "tf-eks-demo"
         DEPLOY_FILE  = "k8s/deployment.yaml"
